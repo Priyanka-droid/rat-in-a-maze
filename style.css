@@ -9,5 +9,12 @@ td {
 table {
   margin-left: 15vw;
   margin-right: 15vw;
-  margin-top: 15vh;
+  margin-top: 10vh;
+}
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+body {
+  background-attachment: url("https://cdn.videvo.net/videvo_files/video/free/2013-12/small_watermarked/Falling_SnowflakesVidevo_preview.webm");
 }

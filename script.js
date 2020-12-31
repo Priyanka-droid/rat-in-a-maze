@@ -151,3 +151,23 @@ function isPoss(grid, visited, i, j) {
   return true;
 }
 console.log(x);
+function play() {
+  let audio = new Audio("game-win-sound-effect.mp3");
+  audio.play();
+}
+function lose() {
+  let audio = new Audio("mixkit-arcade-retro-game-over-213.wav");
+  audio.play();
+}
+
+if (x) {
+  play();
+  document.querySelector("h1").textContent = "You Win";
+  document.querySelector("h1").style.color = "#7766ff";
+  document.querySelector("body").style.backgroundColor = "pink";
+} else {
+  lose();
+  document.querySelector("h1").textContent = "Lose";
+  document.querySelector("h1").style.color = "red";
+  document.querySelector("body").style.backgroundColor = "green";
+}
